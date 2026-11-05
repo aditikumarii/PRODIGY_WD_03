@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe | Prodigy Infotech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="brand">
+            <div class="brand-mark">
+                <span>X</span>
+                <span>O</span>
+            </div>
+
+            <div>
+                <h1>TIC<span>TAC</span>TOE</h1>
+                <p>PRODIGY INFOTECH • TASK 03</p>
+            </div>
+        </div>
+
+        <div class="status">
+            <i></i>
+            GAME ONLINE
+        </div>
+    </header>
+
+
+    <main class="main-container">
+
+        <section class="intro">
+            <div>
+                <p class="eyebrow">GAME ARENA</p>
+
+                <h2>
+                    Three in a row.<br>
+                    <span>Make your move.</span>
+                </h2>
+
+                <p class="description">
+                    Play against the AI or challenge a friend.
+                    Get three symbols in a row to win.
+                </p>
+            </div>
+
+            <div class="task-number">
+                <span>03</span>
+                <small>TASK</small>
+            </div>
+        </section>
+
+
+        <section class="game-layout">
+
+            <div class="game-panel">
+
+                <div class="game-controls">
+
+                    <div class="control-group">
+                        <label>GAME MODE</label>
+
+                        <div class="mode-buttons">
+                            <button class="mode active" data-mode="ai">
+                                🤖 VS AI
+                            </button>
+
+                            <button class="mode" data-mode="pvp">
+                                👥 2 PLAYERS
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="turn">
+                        <small>TURN</small>
+                        <strong id="turnText">X</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="difficulty" id="difficulty">
+
+                    <span>AI LEVEL</span>
+
+                    <button class="level active" data-level="easy">
+                        Easy
+                    </button>
+
+                    <button class="level" data-level="medium">
+                        Medium
+                    </button>
+
+                    <button class="level" data-level="hard">
+                        Hard
+                    </button>
+
+                </div>
+
+
+                <div class="board" id="board">
+
+                    <button class="cell" data-index="0"></button>
+                    <button class="cell" data-index="1"></button>
+                    <button class="cell" data-index="2"></button>
+
+                    <button class="cell" data-index="3"></button>
+                    <button class="cell" data-index="4"></button>
+                    <button class="cell" data-index="5"></button>
+
+                    <button class="cell" data-index="6"></button>
+                    <button class="cell" data-index="7"></button>
+                    <button class="cell" data-index="8"></button>
+
+                </div>
+
+
+                <div class="message" id="message">
+                    Player X, your move
+                </div>
+
+
+                <div class="game-actions">
+
+                    <button class="secondary-btn" id="resetScore">
+                        Reset Score
+                    </button>
+
+                    <button class="primary-btn" id="newGame">
+                        New Game
+                        <span>↻</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <aside class="side-panel">
+
+                <div class="score-panel">
+
+                    <div class="panel-title">
+                        <span>SCOREBOARD</span>
+                        <span class="round-label">LIVE</span>
+                    </div>
+
+
+                    <div class="score-row">
+
+                        <div class="player">
+
+                            <div class="player-symbol x-symbol">
+                                X
+                            </div>
+
+                            <span>PLAYER X</span>
+
+                            <strong id="scoreX">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="versus">
+                            VS
+                        </div>
+
+
+                        <div class="player">
+
+                            <div class="player-symbol o-symbol">
+                                O
+                            </div>
+
+                            <span id="playerOLabel">
+                                AI
+                            </span>
+
+                            <strong id="scoreO">
+                                0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="how-panel">
+
+                    <div class="panel-title">
+                        <span>HOW TO PLAY</span>
+                    </div>
+
+                    <div class="instruction">
+                        <b>01</b>
+                        <p>Choose your game mode.</p>
+                    </div>
+
+                    <div class="instruction">
+                        <b>02</b>
+                        <p>Click an empty square.</p>
+                    </div>
+
+                    <div class="instruction">
+                        <b>03</b>
+                        <p>Get three symbols in a row.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="result-panel" id="resultPanel">
+
+                    <div class="result-icon" id="resultIcon">
+                        ✦
+                    </div>
+
+                    <div>
+                        <small>GAME STATUS</small>
+                        <strong id="resultText">
+                            Ready to play
+                        </strong>
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <span>HTML • CSS • JAVASCRIPT</span>
+        <span>PRODIGY INFOTECH / TASK 03</span>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
